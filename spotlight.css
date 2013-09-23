@@ -1,0 +1,230 @@
+/*
+ * Copyright (c) 2013 Nutanix Inc. All rights reserved.
+ *
+ * Top level less file that is used as a wrapper for generating all of the
+ * other less files.
+ */
+/*
+ * Commonly referenced less variables.
+ */
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Mark Simonson Studio
+ * License URL: http://www.fontspring.com/fflicense/mark-simonson-studio
+ *
+ *
+ */
+@font-face {
+  font-family: 'ProximaNovaSoft';
+  font-weight: 400;
+  src: url('../../../fonts/ProximaNovaSoft-Regular-webfont.eot');
+  src: url('../../../fonts/ProximaNovaSoft-Regular-webfont.eot?iefix') format('eot'), url('../../../fonts/ProximaNovaSoft-Regular-webfont.woff') format('woff'), url('../../../fonts/ProximaNovaSoft-Regular-webfont.ttf') format('truetype'), url('../../../fonts/ProximaNovaSoft-Regular-webfont.svg#webfont') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaSoft';
+  font-weight: 600;
+  src: url('../../../fonts/ProximaNovaSoft-Semibold-webfont.eot');
+  src: url('../../../fonts/ProximaNovaSoft-Semibold-webfont.eot?iefix') format('eot'), url('../../../fonts/ProximaNovaSoft-Semibold-webfont.woff') format('woff'), url('../../../fonts/ProximaNovaSoft-Semibold-webfont.ttf') format('truetype'), url('../../../fonts/ProximaNovaSoft-Semibold-webfont.svg#webfont') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaSoft';
+  font-weight: 700;
+  src: url('../../../fonts/ProximaNovaSoft-Bold-webfont.eot');
+  src: url('../../../fonts/ProximaNovaSoft-Bold-webfont.eot?iefix') format('eot'), url('../../../fonts/ProximaNovaSoft-Bold-webfont.woff') format('woff'), url('../../../fonts/ProximaNovaSoft-Bold-webfont.ttf') format('truetype'), url('../../../fonts/ProximaNovaSoft-Bold-webfont.svg#webfont') format('svg');
+}
+@font-face {
+  font-family: 'ss-nutanix';
+  src: url('../../../fonts/ss-nutanix-regular-webfont.eot');
+  src: url('../../../fonts/ss-nutanix-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../../fonts/ss-nutanix-regular-webfont.woff') format('woff'), url('../../../fonts/ss-nutanix-regular-webfont.ttf') format('truetype'), url('../../../fonts/ss-nutanix-regular-webfont.svg#ss-miniregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  content: attr(data-icon);
+  speak: none;
+  font-family: ss-nutanix;
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+ * Commonly referenced functions.
+ */
+/*
+ * Snippets of reusable CSS to develop faster and keep code readable
+ */
+/*
+ * Copyright (c) 2013 Nutanix Inc. All rights reserved.
+ *
+ * Styles used for the spotlight component.
+ */
+.n-spotlight-search-hit {
+  font-weight: 600;
+  color: #444444;
+}
+.n-spotlight-section-heading {
+  font-family: 'ProximaNovaSoft', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid #eaeaea;
+  color: #89949b;
+  display: block;
+  width: 204px;
+  padding-top: 8px;
+  margin-left: 6px;
+}
+.n-spotlight-section-heading span {
+  margin-left: 5px;
+}
+.n-spotlight-section-heading .n-spotlight-section-count {
+  float: right;
+}
+/*.n-spotlight-clearfix:after {
+    clear: both;
+    content: ".";
+    display: table;
+    height: 0;
+    visibility: hidden;
+}*/
+.n-spotlight-clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.n-spotlight-clearfix {
+  display: inline-block;
+}
+.n-spotlight-clearfix {
+  display: block;
+}
+.n-spotlight-no-results {
+  font-family: 'ProximaNovaSoft', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid #eaeaea;
+  color: #89949b;
+  display: block;
+  width: 204px;
+  padding-top: 8px;
+  margin-left: 6px;
+  width: 100px;
+  padding: 4px;
+}
+.n-spotlight-no-results span {
+  margin-left: 5px;
+}
+.n-spotlight-no-results .n-spotlight-section-count {
+  float: right;
+}
+.n-spotlight-search {
+  display: inline-block;
+  width: 86%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+.n-spotlight-search:hover {
+  cursor: pointer;
+}
+.n-spotlight-cutoff {
+  display: inline-block;
+  width: 86%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 0px auto;
+  position: relative;
+  left: -10px;
+}
+.n-spotlight-cutoff:hover {
+  cursor: pointer;
+}
+.n-spotlight-cutoff:hover {
+  cursor: default;
+}
+li.n-menu-item {
+  font-family: 'ProximaNovaSoft', Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+li.n-menu-item:not(:-moz-handler-blocked) {
+  margin-bottom: -3px;
+}
+li.n-menu-item a {
+  color: #89949b !important;
+  transition: none;
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+li.n-menu-item a.n-hover {
+  background-color: #26bbf0 !important;
+  color: #fff !important;
+}
+li.n-menu-item a.n-hover .n-spotlight-search-hit {
+  color: #fff !important;
+}
+.n-spotlight-header-ul {
+  position: fixed !important;
+  max-height: 700px;
+  overflow-y: auto;
+}
+.n-navigation .n-spinner-search-img {
+  position: relative;
+  left: 230px;
+}
+.n-spotlight-results {
+  position: fixed;
+  z-index: 1031;
+  background-color: #fff !important;
+  border-radius: 4px;
+  display: inline-block;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+  border: 1px solid #ddd;
+}
+.n-spotlight-results label {
+  line-height: normal;
+  margin-bottom: 0;
+  font-size: inherit;
+}
+.n-spotlight-results ul {
+  background-color: #fff !important;
+  display: block;
+  list-style: none;
+  margin: 0 0 10px 0;
+}
+.n-spotlight-results .antiscroll-scrollbar-vertical {
+  right: 8px;
+  background-color: #656768;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
